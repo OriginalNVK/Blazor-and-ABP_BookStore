@@ -1,24 +1,15 @@
-import { motion } from 'framer-motion';
-import { styles } from '../styles';
-import { ComputersCanvas } from './canvas';
-
 const Hero = () => {
   return (
-    <section className='relative w-full h-screen mx-auto'>
-      <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915eff]' />
-          <div className='w-1 h-80 h-40 violet-gradient' />
-        </div>
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className='text-[#915eff]'>Original NVK</span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I'm a Dotnet Full Stack Developer, UI/UX Designer.
-          </p>
-        </div>
-      </div>
-      <ComputersCanvas/>
-    </section>
+      <div className="flex justify-between items-center py-[200px]">
+          <div className="flex flex-col text-white">
+              <div>Welcome to my portfolio</div>
+              <h1>Hi! I'm Original NVK <span>Fullstack developer</span></h1>
+              <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              </p>
+              <a href="/">Let's Connect</a>
+          </div>
+    </div>
   )
 }
 
